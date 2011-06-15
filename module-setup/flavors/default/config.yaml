@@ -1,0 +1,8 @@
+---
+author: Daisuke Komatsu
+email: vkg.taro@gmail.com
+plugins:
+  - Config::Basic
+  - VC::SVN
+  - Template
+  - Test::Makefile

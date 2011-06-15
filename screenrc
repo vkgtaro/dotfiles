@@ -1,0 +1,22 @@
+# -*- mode: shell-script; coding:utf-8 -*-
+
+escape ^z^z
+markkeys h=^b:l=^f:$=^e:^d=^v
+
+bind U encoding utf8
+bind E encoding euc
+
+multiuser on
+aclumask tomyhero,woremacx,hideden,dann,azurestone,admin-w
+acladd tomyhero,woremacx,hideden,dann,azurestone,tomoki,admin
+
+# bind -c REGION 2 split
+# bind -c REGION 1 only
+# bind -c REGION 0 remove
+# bind -c REGION o focus
+# bind -c REGION ^ resize
+# bind x command -c REGION
+
+#defencoding eucJP
+#hardstatus alwayslastline "%w | %h"
+hardstatus alwayslastline "[%02c] %`%-w%{=b bw}%n %t%{-}%+w"

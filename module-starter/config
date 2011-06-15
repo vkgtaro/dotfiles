@@ -1,0 +1,5 @@
+author:  Daisuke Komatsu
+email:   taro@cpan.org
+builder: ExtUtils::MakeMaker Module::Build
+plugins: Module::Starter::PBP
+template_dir: /home/taro/.module-starter/PBP
