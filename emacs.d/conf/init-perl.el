@@ -15,8 +15,7 @@
 
 ; テストファイルも cperl-mode で開くようにする
 (setq auto-mode-alist
-      (append '(("\\.t$" . cperl-mode))
-              auto-mode-alist))
+      (append '(("\\.t$" . cperl-mode)) auto-mode-alist))
 
 ;;; perltidy-region powered by typester
 (defun perltidy-region ()
