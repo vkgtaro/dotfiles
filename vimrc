@@ -6,3 +6,4 @@ set list
 set ai
 set expandtab
 set ft=svn
+set encoding=utf-8
