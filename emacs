@@ -96,8 +96,9 @@
 (load "init-changelog")
 (load "init-makefile")
 (load "init-tiarra")
-(load "init-ditz")
+; (load "init-ditz")
 (load "init-languages")
+(load "init-word-count")
 
 ;; Meadow用設定を読み込む
 ;; (when (and run-w32 run-meadow)
@@ -108,3 +109,4 @@
   (load "init-mac"))
 
 (set-default-coding-systems 'utf-8)
+(setq tramp-default-method "scpx")
