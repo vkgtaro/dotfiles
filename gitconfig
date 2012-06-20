@@ -1,16 +1,17 @@
 [user]
-    name = vkgtaro
-    email = vkg.taro@gmail.com
+    name = komatsu
+    email = komatsu@cb21.co.jp
 
 [alias]
     ci = commit -a
     co = checkout
     st = status -a
-    praise = blame 
+    praise = blame
     up = pull --rebase
     difflog = log -p HEAD@{3.days.ago}
     edit-unmerged = "!f() { git ls-files --unmerged | cut -f2 | sort -u ; }; vim `f`"
     add-unmerged = "!f() { git ls-files --unmerged | cut -f2 | sort -u ; }; git add `f`"
+    graph = log --graph --date-order -C -M --pretty=format:\"<%h> %ad [%an] %Cgreen%d%Creset %s\" --all --date=short
 
 [color]
     diff = auto
@@ -36,3 +37,6 @@
 [tig "bind"]
     generic = g move-first-line
     generic = G move-last-line
+
+[core]
+	pager = lv -cOu8
