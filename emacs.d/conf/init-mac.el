@@ -13,6 +13,8 @@
 (if window-system
     (progn
       ;;(load "carbon-font")
+      ;; Window size
+      (setq initial-frame-alist '((width . 80) (height . 44)))
       ;; 文字の色を設定します。
       (add-to-list 'default-frame-alist '(foreground-color . "white"))
       ;; 背景色を設定します。
