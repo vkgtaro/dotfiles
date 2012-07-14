@@ -56,6 +56,7 @@ export LC_ALL=C
 export LANG="ja_JP.UTF-8"
 export LC_COLORS='di=01;37;40;'
 export PERL_AUTOINSTALL="--defaultdeps"
+export LESSCHARSET=utf-8
 
 #-----------------------------------------------
 # PROMPT
@@ -84,6 +85,8 @@ alias cattest="CATALYST_DEBUG=0 prove --lib lib t"
 alias cattestpod="CATALYST_DEBUG=0 TEST_POD=1 prove --lib lib t"
 alias svndiff="svn diff | vless"
 alias ducks='du -cks * |sort -rn |head -11'
+alias ducms='du -cms * |sort -rn |head -11'
+alias ducgs='du -cgs * |sort -rn |head -11'
 
 #-----------------------------------------------
 # ファイル検索
