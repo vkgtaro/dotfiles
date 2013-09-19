@@ -59,11 +59,28 @@ export PERL_AUTOINSTALL="--defaultdeps"
 export LESSCHARSET=utf-8
 
 #-----------------------------------------------
+# ブランチ情報表示
+#-----------------------------------------------
+
+# VCSの情報を取得するzshの便利関数 vcs_infoを使う
+autoload -Uz vcs_info
+# 表示フォーマットの指定
+# %b ブランチ情報
+# %a アクション名(mergeなど)
+zstyle ':vcs_info:*' formats '[%b]'
+zstyle ':vcs_info:*' actionformats '[%b|%a]'
+precmd () {
+    psvar=()
+    LANG=en_US.UTF-8 vcs_info
+    [[ -n "$vcs_info_msg_0_" ]] && psvar[1]="$vcs_info_msg_0_"
+}
+
+#-----------------------------------------------
 # PROMPT
 #-----------------------------------------------
 HOSTNAME=`hostname`
 PROMPT="[%{[01;32m%}${USER}@$HOSTNAME%{[m%}] %(!.#.$) "
-RPROMPT="[%{[01;32m%}%~%{[m%}]"
+RPROMPT="%1(v|%F{green}%1v%f|) [%{[01;32m%}%~%{[m%}]"
 
 zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
 
@@ -95,6 +112,7 @@ alias ducgs='du -cgs * |sort -rn |head -11'
 iname() {
   find . -type d -name .svn -prune -o \( -iname "*$1*" -print \)
 }
+
 
 #-----------------------------------------------
 # screen の下のラインに打ったコマンドを表示
