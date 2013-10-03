@@ -24,11 +24,11 @@
       ;; マウスポインタの色を設定します。
       (add-to-list 'default-frame-alist '(mouse-color . "ForestGreen"))
       ;; モードラインの文字の色を設定します。
-      (set-face-foreground 'modeline "white")
+      ; (set-face-foreground 'modeline "white")
       ;; モードラインの背景色を設定します。
-      (set-face-background 'modeline "RoyalBlue")
+      ; (set-face-background 'modeline "RoyalBlue")
       ;; 選択中のリージョンの色を設定します。
-      (set-face-background 'region "RoyalBlue")
+      ; (set-face-background 'region "RoyalBlue")
 
       ;; 半透明
       ;;(add-to-list 'default-frame-alist   '(active-alpha . 0.90))
