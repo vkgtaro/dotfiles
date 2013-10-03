@@ -1,7 +1,8 @@
 (autoload 'html-helper-mode "html-helper-mode" "Yay HTML" t)
 (setq auto-mode-alist
       (append '(("\\.html$" . html-helper-mode)
-                ("\\.tt$" . html-helper-mode)) auto-mode-alist))
+                ("\\.tt$" . html-helper-mode)
+                ("\\.tx$" . html-helper-mode)) auto-mode-alist))
 (add-hook 'html-helper-load-hook
           '(lambda () (require 'html-font)))
 (require 'html-tt)
