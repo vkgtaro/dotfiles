@@ -1,6 +1,6 @@
 [user]
-    name = vkgtaro
-    email = vkg.taro@gmail.com
+	name = komatsu
+	email = dkomatsu@oneup-inc.com
 
 [alias]
     ci = commit -a
@@ -38,8 +38,9 @@
     generic = g move-first-line
     generic = G move-last-line
 
-# [core]
+#[core]
 # 	pager = lv -cOu8
+
 [push]
     default = simple
 
