@@ -12,39 +12,49 @@
 ;; Carbon Emacs のために色つけ
 (if window-system
     (progn
-      ;;(load "carbon-font")
-      ;; Window size
-      (setq initial-frame-alist '((width . 80) (height . 44)))
-      ;; 文字の色を設定します。
-      (add-to-list 'default-frame-alist '(foreground-color . "white"))
-      ;; 背景色を設定します。
-      (add-to-list 'default-frame-alist '(background-color . "black"))
-      ;; カーソルの色を設定します。
-      (add-to-list 'default-frame-alist '(cursor-color . "LimeGreen"))
-      ;; マウスポインタの色を設定します。
-      (add-to-list 'default-frame-alist '(mouse-color . "ForestGreen"))
-      ;; モードラインの文字の色を設定します。
+      ; ;;(load "carbon-font")
+      ; ;; Window size
+      ; (setq initial-frame-alist '((width . 80) (height . 44)))
+      ; ;; 文字の色を設定します。
+      ; (add-to-list 'default-frame-alist '(foreground-color . "white"))
+      ; ;; 背景色を設定します。
+      ; (add-to-list 'default-frame-alist '(background-color . "black"))
+      ; ;; カーソルの色を設定します。
+      ; (add-to-list 'default-frame-alist '(cursor-color . "LimeGreen"))
+      ; ;; マウスポインタの色を設定します。
+      ; (add-to-list 'default-frame-alist '(mouse-color . "ForestGreen"))
+      ; ;; モードラインの文字の色を設定します。
       ; (set-face-foreground 'modeline "white")
-      ;; モードラインの背景色を設定します。
+      ; ;; モードラインの背景色を設定します。
       ; (set-face-background 'modeline "RoyalBlue")
-      ;; 選択中のリージョンの色を設定します。
+      ; ;; 選択中のリージョンの色を設定します。
       ; (set-face-background 'region "RoyalBlue")
+
+      (setq default-frame-alist
+        (append (list
+          '(width . 120)
+          '(height . 40)
+          '(background-color . "black")
+          '(foreground-color . "white")
+          '(cursor-color . "green")
+          )
+         default-frame-alist))
 
       ;; 半透明
       ;;(add-to-list 'default-frame-alist   '(active-alpha . 0.90))
       ;;(add-to-list 'default-frame-alist '(inactive-alpha . 0.40))
 
-      (set-face-foreground 'font-lock-comment-face "firebrick")
-      (set-face-foreground 'font-lock-string-face  "ForestGreen")
-      (set-face-foreground 'font-lock-keyword-face "RoyalBlue")
-      (set-face-foreground 'font-lock-function-name-face "DodgerBlue")
-      (set-face-bold-p 'font-lock-function-name-face t)
-      (set-face-foreground 'font-lock-variable-name-face "GoldenRod")
-      (set-face-foreground 'font-lock-type-face "LightSeaGreen")
-      (set-face-foreground 'font-lock-builtin-face "purple")
-      (set-face-foreground 'font-lock-constant-face "DarkMagenta")
-      (set-face-foreground 'font-lock-warning-face "blue")
-      (set-face-bold-p 'font-lock-warning-face nil)
+      ; (set-face-foreground 'font-lock-comment-face "firebrick")
+      ; (set-face-foreground 'font-lock-string-face  "ForestGreen")
+      ; (set-face-foreground 'font-lock-keyword-face "RoyalBlue")
+      ; (set-face-foreground 'font-lock-function-name-face "DodgerBlue")
+      ; (set-face-bold-p 'font-lock-function-name-face t)
+      ; (set-face-foreground 'font-lock-variable-name-face "GoldenRod")
+      ; (set-face-foreground 'font-lock-type-face "LightSeaGreen")
+      ; (set-face-foreground 'font-lock-builtin-face "purple")
+      ; (set-face-foreground 'font-lock-constant-face "DarkMagenta")
+      ; (set-face-foreground 'font-lock-warning-face "blue")
+      ; (set-face-bold-p 'font-lock-warning-face nil)
 
       ; carbon emacs でフォント設定
       (create-fontset-from-ascii-font "Menlo-14:weight=normal:slant=normal" nil "menlokakugo")
