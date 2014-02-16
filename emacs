@@ -96,6 +96,7 @@
 (load "init-changelog")
 (load "init-makefile")
 (load "init-tiarra")
+(load "init-markdown")
 ; (load "init-ditz")
 (load "init-languages")
 (load "init-word-count")

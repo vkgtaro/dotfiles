@@ -105,3 +105,5 @@
 
 (put 'set-goal-column 'disabled nil)
 
+; 複数 window を立ち上げない from typester さん
+(setq ns-pop-up-frames nil)
