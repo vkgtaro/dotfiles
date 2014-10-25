@@ -22,3 +22,6 @@
   nil)
 
 ;; (setq visible-bell t)
+
+;; でかいリポジトリの時に vc-git 重すぎ
+(eval-after-load "vc" '(remove-hook 'find-file-hooks 'vc-find-file-hook))
