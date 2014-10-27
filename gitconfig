@@ -40,8 +40,6 @@
 
 # [core]
 # 	pager = lv -cOu8
-[push]
-    default = simple
 
 [merge]
     ff = false
