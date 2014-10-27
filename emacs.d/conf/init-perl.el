@@ -1,10 +1,10 @@
 (defalias 'perl-mode 'cperl-mode)
 (setq cperl-auto-newline t)
 (setq cperl-indent-parens-as-block t)
-(setq cperl-close-paren-offset -4)
-(setq cperl-indent-level 4)
-(setq cperl-label-offset -4)
-(setq cperl-continued-statement-offset 4)
+(setq cperl-close-paren-offset -2)
+(setq cperl-indent-level 2)
+(setq cperl-label-offset -2)
+(setq cperl-continued-statement-offset 1)
 (setq cperl-highlight-variables-indiscriminately t)
 
 ; perl-completion-mode
