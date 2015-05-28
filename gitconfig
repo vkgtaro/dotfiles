@@ -1,6 +1,6 @@
 [user]
-	name = komatsu
-	email = dkomatsu@oneup-inc.com
+	name = "Daisuke Komatsu"
+	email = daisuke.komatsu@gmodecorp.com
 
 [alias]
     ci = commit -a
@@ -45,3 +45,14 @@
     ff = false
 [push]
 	default = simple
+[filter "media"]
+	clean = git-media-clean %f
+	smudge = git-media-smudge %f
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[pull]
+	rebase = false
