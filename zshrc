@@ -52,7 +52,6 @@ stty stop undef
 PATH=/usr/local/sbin:/usr/sbin:/sbin:$PATH:$HOME/bin
 export EDITOR=vim
 export AUTHOR="lazy people C<< <info __at__ lazy-people.org> >>"
-export LC_ALL=C
 export LANG="ja_JP.UTF-8"
 export LC_COLORS='di=01;37;40;'
 export PERL_AUTOINSTALL="--defaultdeps"
