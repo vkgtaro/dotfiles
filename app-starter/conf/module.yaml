@@ -1,7 +1,0 @@
-tag_style : star
-ignore  :
-  - \.svn
-  - \.cvs
-replace :
-  author : 'Daisuke Komatsu'
-  email  : vkg.taro@gmail.com
