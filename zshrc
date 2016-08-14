@@ -53,6 +53,7 @@ PATH=/usr/local/sbin:/usr/sbin:/sbin:$PATH:$HOME/bin
 export EDITOR=vim
 export AUTHOR="lazy people C<< <info __at__ lazy-people.org> >>"
 export LANG="ja_JP.UTF-8"
+export LC_CTYPE="ja_JP.UTF-8"
 export LC_COLORS='di=01;37;40;'
 export PERL_AUTOINSTALL="--defaultdeps"
 export LESSCHARSET=utf-8
