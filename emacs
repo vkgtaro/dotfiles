@@ -4,6 +4,13 @@
 ;; http://d.hatena.ne.jp/hito-d/20060220#1140445790
 
 ;; OSを判別
+
+;; Added by Package.el.  This must come before configurations of
+;; installed packages.  Don't delete this line.  If you don't want it,
+;; just comment it out by adding a semicolon to the start of the line.
+;; You may delete these explanatory comments.
+(package-initialize)
+
 (defvar run-unix
   (or (equal system-type 'gnu/linux)
       (or (equal system-type 'usg-unix-v)
@@ -80,12 +87,14 @@
 ;; これやっぱ外しておこうとかいうのを調整するのが面倒。
 
 (load "init-global")
+(load "init-helm-gtags")
+(load "init-package")
 (load "init-autosave-buffers")
 (load "init-keymaps")
-(load "init-unicode-range")
+; (load "init-unicode-range")
 (load "init-highlighting")
 (load "init-flymake")
-(load "init-anything")
+; (load "init-anything")
 (load "init-html")
 (load "init-css")
 (load "init-javascript")
@@ -95,7 +104,7 @@
 (load "init-yaml")
 (load "init-changelog")
 (load "init-makefile")
-(load "init-tiarra")
+; (load "init-tiarra")
 (load "init-markdown")
 ; (load "init-ditz")
 (load "init-languages")
@@ -111,3 +120,17 @@
 
 (set-default-coding-systems 'utf-8)
 (setq tramp-default-method "scpx")
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(package-selected-packages
+   (quote
+    (ac-php ctags-update flycheck helm-gtags company-php php-mode auto-complete auto-install ##))))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )

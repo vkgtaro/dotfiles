@@ -57,6 +57,7 @@ export LC_CTYPE="ja_JP.UTF-8"
 export LC_COLORS='di=01;37;40;'
 export PERL_AUTOINSTALL="--defaultdeps"
 export LESSCHARSET=utf-8
+export GTAGSLABEL=pygments
 
 #-----------------------------------------------
 # ブランチ情報表示
@@ -104,6 +105,7 @@ alias svndiff="svn diff | vless"
 alias ducks='du -cks * |sort -rn |head -11'
 alias ducms='du -cms * |sort -rn |head -11'
 alias ducgs='du -cgs * |sort -rn |head -11'
+alias egrep='egrep --color'
 
 #-----------------------------------------------
 # ファイル検索
